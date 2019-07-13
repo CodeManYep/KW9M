@@ -102,13 +102,13 @@ def removeDup():
     return True
     
 if __name__ == "__main__":
-    program = "KWData.py"
+    program = "KW9M.py"
     logger = logging.getLogger(program)
 
     logging.basicConfig(format='%(asctime)s: %(levelname)s: %(message)s')
     logging.root.setLevel(level=logging.INFO)
     logger.info("running %s" % ' '.join(program))
-    # 开始运行时间
+    # start time...
     starttime = datetime.datetime.now()
     print('start time:' + str(starttime))
     swapPosition()
@@ -117,10 +117,10 @@ if __name__ == "__main__":
     print('--- second step done ---')
     removeDup()
     print('--- third step done ---')
-    print('程序运行结束...')
-    # 结束运行时间
+    print('running over...')
+    # end time...
     endtime = datetime.datetime.now()
     print('end time:' + str(endtime))
-    # 运行时间
+    # running time...
     runAllTime = endtime - starttime
     print('running time:' + str(runAllTime))
